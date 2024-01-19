@@ -29,3 +29,10 @@ const values = {
 };
 
 protocol.debugPayloadErrors(values, {version: 1.6, model: "cp", suffix: "Request", procName: "SetChargingProfile"})
+if(protocol.debugPayloadErrors(values, {version: 1.6, model: "cp", suffix: "Request", procName: "SetChargingProfile"})){
+    console.log()
+    console.log("Great success!")
+} else {
+    console.log()
+    console.error("Sad trombone")
+}
